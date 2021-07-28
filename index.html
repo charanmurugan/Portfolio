@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/title logo.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Charan Murugan</title>
+  </head>
+  <body>
+    <!-- INTROCONTAINER PART -->
+    <div class="introContainer">
+      <!-- HEADER -->
+      <header class="introContainer-header" id="header">
+        <!-- HEADER LOGO -->
+        <div class="introContainer-logo">
+          <a href="#" class="header-anchor" id="top-page">
+            <img class="header-logo" src="./images/cmlogo.jpeg" alt="" />
+          </a>
+        </div>
+        <!-- MENU BAR -->
+        <div class="menu-bar" id=" display" onclick="displayMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- HEADER OPTIONS LINKS-->
+        <div class="introcontainer-header-options">
+          <nav class="header-links">
+            <ul class="header-list">
+              <li class="header-listItem">
+                <a class="header-listLinks" href="#skills">Skills</a>
+              </li>
+              <li class="header-listItem">
+                <a class="header-listLinks" href="#project">Projects</a>
+              </li>
+              <li class="header-listItem">
+                <a class="header-listLinks" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- MY IMAGE -->
+      <div class="introContainer-image">
+        <a href="#" class="image-anchor">
+          <img src="./images/ownimage.jpeg" class="own-image" />
+        </a>
+      </div>
+      <!-- INTROCONTAINER TEXT -->
+      <div class="introContainer-text">
+        <div class="static-txt">I'm Charan Murugan</div>
+        <div class="dynamic-txt">
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[  "Full Stack Developer"]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </div>
+      </div>
+      <!-- RESUME BTN -->
+      <div class="introcontainer-btn">
+        <a href="#" class="resume-btn" download>
+          <i class="fas fa-download"></i> RESUME
+        </a>
+      </div>
+    </div>
+    <!-- SOCIAL MEDIA ICONS -->
+    <div class="social-mediaIcons" id="social">
+      <ul class="social-medialist">
+        <li class="social-medialist-item">
+          <a href="#github" class="social-media-anchor">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-medialist-item">
+          <a href="#" class="social-media-anchor">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-medialist-item">
+          <a href="#" class="social-media-anchor">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-medialist-item">
+          <a href="#" class="social-media-anchor">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-medialist-item">
+          <a
+            href="https://calm-garden-64320.herokuapp.com/"
+            target="_blank"
+            class="social-media-anchor"
+          >
+            <i class="fab fa-mailchimp"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- MENUBAR CLOSE BTN -->
+    <div class="menu-barContainer">
+      <p class="menu-close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </p>
+      <!-- MENU BAR OPTIONS -->
+      <div class="menu-bar-item">
+        <nav class="menu-links">
+          <ul class="menu-items" onclick="hideMenu()">
+            <li class="menu-items-list">
+              <a class="menu-listLinks" href="#skills">Skills</a>
+            </li>
+            <li class="menu-items-list">
+              <a class="menu-listLinks" href="#about">About</a>
+            </li>
+            <li class="menu-items-list">
+              <a class="menu-listLinks" href="#project">Projects</a>
+            </li>
+            <li class="menu-items-list">
+              <a class="menu-listLinks" href="#education">Education</a>
+            </li>
+            <li class="menu-items-list">
+              <a class="menu-listLinks" href="#contact">Contact</a>
+            </li>
+            <p id="copyRight"></p>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
