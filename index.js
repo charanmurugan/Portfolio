@@ -1,4 +1,4 @@
-console.log(screen.width);
+console.log("update skills details");
 var myNav = document.getElementById("header");
 window.onscroll = function () {
   "use strict";
@@ -7,6 +7,7 @@ window.onscroll = function () {
     document.documentElement.scrollTop >= 480
   ) {
     myNav.classList.add("introContainer-headerColored");
+    Circlle(".round");
   } else {
     myNav.classList.add("introContainer-header");
     myNav.classList.remove("introContainer-headerColored");
@@ -56,6 +57,7 @@ TxtType.prototype.tick = function () {
 };
 
 window.onload = function () {
+  Circlle(".round");
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-type");
@@ -80,3 +82,36 @@ var date = new Date().getFullYear();
 document.getElementById(
   "copyRight"
 ).innerHTML = `&copy; ${date} Charan Murugan `;
+
+function Circlle(el) {
+  $(el)
+    .circleProgress({ fill: { color: "#ff5c5c" } })
+    .on("circle-animation-progress", function (event, progress, stepValue) {
+      $(this).find("round");
+    });
+}
+
+var modal = document.getElementById("techSkills");
+
+// Get the button that opens the modal
+var techbtn = document.getElementById("techBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("tech-close")[0];
+
+// When the user clicks the button, open the modal
+techbtn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
