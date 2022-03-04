@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/title logo.jpg" />
+    <link rel="icon" href="./images/titlelogo.jpeg" />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -12,9 +12,11 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Charan Murugan</title>
   </head>
   <body>
+    <div style="display:none;" id="myDiv">
     <!-- INTROCONTAINER PART -->
     <div class="introContainer">
       <!-- HEADER -->
@@ -60,7 +62,7 @@
             href=""
             class="typewrite"
             data-period="2000"
-            data-type='[  "Full Stack Developer"]'
+            data-type='[  "Full Stack Developer","MERN Stack Developer",Freelancer]'
           >
             <span class="wrap"></span>
           </a>
@@ -68,7 +70,7 @@
       </div>
       <!-- RESUME BTN -->
       <div class="introcontainer-btn">
-        <a href="#" class="resume-btn" download>
+        <a href="./Charan-Resume.pdf" class="resume-btn" download>
           <i class="fas fa-download"></i> RESUME
         </a>
       </div>
@@ -77,32 +79,28 @@
     <div class="social-mediaIcons" id="social">
       <ul class="social-medialist">
         <li class="social-medialist-item">
-          <a href="#github" class="social-media-anchor">
+          <a href="https://github.com/charanmurugan" target="_blank" class="social-media-anchor">
             <i class="fab fa-github"></i>
           </a>
         </li>
         <li class="social-medialist-item">
-          <a href="#" class="social-media-anchor">
+          <a href="https://www.linkedin.com/in/charan-murugan-2a84521b2" target="_blank" class="social-media-anchor">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li class="social-medialist-item">
-          <a href="#" class="social-media-anchor">
+          <a href="https://www.instagram.com/charan_murugan/" target="_blank"  class="social-media-anchor">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="social-medialist-item">
-          <a href="#" class="social-media-anchor">
+          <a href="https://twitter.com/charan_murugan" target="_blank" class="social-media-anchor">
             <i class="fab fa-twitter"></i>
           </a>
         </li>
         <li class="social-medialist-item">
-          <a
-            href="https://calm-garden-64320.herokuapp.com/"
-            target="_blank"
-            class="social-media-anchor"
-          >
-            <i class="fab fa-mailchimp"></i>
+          <a href="https://www.facebook.com/charan.murugan.98/" target="_blank" class="social-media-anchor">
+            <i class="fab fa-facebook"></i>
           </a>
         </li>
       </ul>
@@ -140,7 +138,7 @@
     <div id="skills"></div>
     <div class="skillContainer">
       <!-- PROFESSIONAL SKILLS CONTAINER -->
-      <h3>Professional Skills</h3>
+      <h3 class="main-Heading">Professional Skills</h3>
       <!-- PROFESSIONAL SKILLS DETAILS -->
       <div class="professionalSkills">
         <div
@@ -184,19 +182,19 @@
           href="#techSkills"
           class="btn-flip"
           data-back="loading ..."
-          data-front="tech Skills"
+          data-front="more"
         ></a>
       </div>
       <!-- TECHNICAL SKILLS CONTAINER  -->
       <div class="technicalSkills" id="techSkills">
         <div class="tech-items">
           <span class="tech-close">&times;</span>
-          <h4>Technical Skills</h4>
+          <h3 class="main-Heading tech">Technical Skills</h3>
           <!-- TECHNICAL SKILLS DETAILS -->
           <div class="tech-items-list">
             <div class="bar">
               <div class="info">
-                <span>HTML</span>
+                <span>HTML5</span>
               </div>
               <div class="progress-line html">
                 <span></span>
@@ -204,7 +202,7 @@
             </div>
             <div class="bar">
               <div class="info">
-                <span>CSS</span>
+                <span>CSS3</span>
               </div>
               <div class="progress-line css">
                 <span></span>
@@ -212,7 +210,15 @@
             </div>
             <div class="bar">
               <div class="info">
-                <span>jQuery</span>
+                <span>JAVASCRIPT</span>
+              </div>
+              <div class="progress-line javascript">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>JQUERY</span>
               </div>
               <div class="progress-line jquery">
                 <span></span>
@@ -220,7 +226,31 @@
             </div>
             <div class="bar">
               <div class="info">
-                <span>Python</span>
+                <span>REACT</span>
+              </div>
+              <div class="progress-line react">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>NODEJS</span>
+              </div>
+              <div class="progress-line nodejs">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>MONGODB</span>
+              </div>
+              <div class="progress-line mongodb">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>PYTHON</span>
               </div>
               <div class="progress-line python">
                 <span></span>
@@ -228,65 +258,17 @@
             </div>
             <div class="bar">
               <div class="info">
-                <span>MySQL</span>
+                <span>JAVA</span>
               </div>
-              <div class="progress-line mysql">
+              <div class="progress-line java">
                 <span></span>
               </div>
             </div>
             <div class="bar">
               <div class="info">
-                <span>MySQL</span>
+                <span>PHOTOSHOP</span>
               </div>
-              <div class="progress-line mysql">
-                <span></span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>MySQL</span>
-              </div>
-              <div class="progress-line mysql">
-                <span></span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>MySQL</span>
-              </div>
-              <div class="progress-line mysql">
-                <span></span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>MySQL</span>
-              </div>
-              <div class="progress-line mysql">
-                <span></span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>MySQL</span>
-              </div>
-              <div class="progress-line mysql">
-                <span></span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>MySQL</span>
-              </div>
-              <div class="progress-line mysql">
-                <span></span>
-              </div>
-            </div>
-            <div class="bar">
-              <div class="info">
-                <span>MySQL</span>
-              </div>
-              <div class="progress-line mysql">
+              <div class="progress-line photoshop">
                 <span></span>
               </div>
             </div>
@@ -294,23 +276,23 @@
         </div>
       </div>
     </div>
-    <div class="about" id="about">
-      <h3>About</h3>
+    <div class="about subHeading" id="about">
+      <h3 class="main-Heading">About</h3>
       <div class="aboutContainer">
         <div class="aboutContainer-image">
-          <img src="./images/bg.jpeg" alt="my image" class="about-image" />
+          <img src="./images/bg1-min.png" alt="my image" class="about-image" />
         </div>
         <div class="aboutContainer-details">
-          <h2 class="my-name">Hi! I'm Charan M</h2>
+          <h2 class="my-name main-Heading">Hi! I'm Charan M</h2>
           <p class="my-details">
-            Charan Murugan is a <span> Web developer</span> working on a simple
-            website for my personal use. I love to create beautiful performant
+            I am Young Passionate <span> Web developer</span> working on a simple
+            website . I love to create beautiful performant
             products with <span> delightful user experiences</span>. My interest
             is to take up <span>competitive programming </span>and prove my
             ability. Check out my <span>projects</span> to know what I can do.
           </p>
           <div class="about-btns">
-            <a href="#" download>
+            <a href="./Charan-Resume.pdf" download>
               <span> <i class="fas fa-download"></i> Resume</span>
             </a>
             <a href="#contact">
@@ -320,7 +302,206 @@
         </div>
       </div>
     </div>
+    <!-- PROJECT CONTAINER -->
+    <div class="project subHeading" id="project">
+      <h3 class="main-Heading">Projects</h3>
+      <div class="projectContainer lapProjectContainer">
+        <div class="project-left">
+          <ul id="projectList" onclick="getProjectNumber(event)">
+            <li class="projectNumber active">1</li>
+            <li class="projectNumber">2</li>
+            <li class="projectNumber">3</li>
+            <li class="projectNumber">4</li>
+            <li class="projectNumber">5</li>
+            <li class="projectNumber">6</li>
+          </ul>
+        </div>
+       <div class="project-right">
+          <div class="project-right-top">
+            <img src="./images/projects/amazon clone.jpeg" alt="" id="project-image" class="projectImage">
+            <div class="projectContainer-details">
+              <h2 class="project-name">Amazon Clone</h2>
+              <p class="project-details">
+                <span>Amazon clone</span> with full functionality, it includes user authentication with <span>firebase</span> and cloud storage with firebase. The payment process is done with <span>stripe payment</span>  with their functionality process and checks the card number and the payment is done. The project was done with <span>React</span>.
+              </p>
+            </div>
+          </div>
+        <div class="project-right-bottom">
+          <div class="about-btns project-btns">
+            <a href="https://www.linkedin.com/posts/charan-murugan-2a84521b2_amazon-firebase-firebase-activity-6776485695700779008-bNrX" target="_blank" class="projectExplore">
+              <span><i class="fas fa-external-link-square-alt"></i> Explore</span>
+            </a>
+            <a href="https://github.com/charanmurugan/amazon-clone" target="_blank" class="projectCode">
+              <span><i class="fas fa-code"></i></i> Code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div> 
+      <p id="seeProjects">* click on the numbers to see other projects</p> 
+      <div class="mobileProjectContainer">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <a href="https://www.linkedin.com/posts/charan-murugan-2a84521b2_amazon-firebase-firebase-activity-6776485695700779008-bNrX" target="_blank" ><img src="./images/projects/amazon clone.jpeg" style="width:100%"></a>
+            <div class="text">Amazon Clone</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <a href="https://ancient-sands-47871.herokuapp.com/" target="_blank" ><img src="./images/projects/weather.jpeg" style="width:100%"></a>
+            <div class="text">Weather App</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <a href="https://calm-garden-64320.herokuapp.com/" target="_blank" ><img src="./images/projects/newsLetter.jpeg" style="width:100%"></a>
+            <div class="text">News Letter</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <a href="https://www.linkedin.com/posts/charan-murugan-2a84521b2_google-facebook-activity-6757287670004768768-oxiH" target="_blank" ><img src="./images/projects/login.jpeg" style="width:100%"></a>
+            <div class="text">Authentication</div>
+          </div>          
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <a href="https://drive.google.com/file/d/1k2mTiQSnDHnL-kSvAxiKsaJ9g-cSc-oL/view" target="_blank" ><img src="./images/projects/musicapi.jpeg" style="width:100%"></a>
+            <div class="text">Music App</div>
+          </div>
+        <br>
+            <div style="text-align:center " class="dot-align">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>      
+      </div>
+  </div>
+  </div>
+  <!-- EDUCATION CONTAINER -->
+  <div class="educationContainer subHeading" id="education">
+    <h3 class="main-Heading">Education</h3>   
+    <div class="educationContainer-details ">
+      <div class="educationDetails-left  education-left-0 ">
+         <p class="education-year college">2019</p>
+          <p class="education-course">Bachelor's Degree</p>
+      </div>
+      <div class="educationDetails-right">
+        <div class="educationDetails-right-top">
+          <h5 class="courseName">Bachelor of Information Technology</h5>
+          <h6 class="collegeName">PANIMALAR ENGINEERING COLLEGE</h6>
+        </div>
+        <div class="educationDetails-right-bottom">
+            <p class="college-details">I have pursed my B.Tech in Information Technology at <a href="https://panimalar.ac.in/">Panimalar Engineering College </a> Chennai it is affilated to the <a href="https://www.annauniv.edu/">Anna University </a> Chennai.</p>
+        </div>       
+      </div>
+      </div>
+    <div class="educationContainer-details school">
+      <div class="educationDetails-left education-left">
+         <p class="education-year ">2017-2019</p>
+          <p class="education-course">High School</p>
+      </div>
+      <div class="educationDetails-right">
+        <div class="educationDetails-right-top">
+          <h5 class="courseName">Science and Mathematics</h5>
+          <h6 class="collegeName">SCHOOL OF SECONDARY BOARD</h6>
+        </div>
+        <div class="educationDetails-right-bottom">
+            <p class="college-details ">I have completed my high schooling in  <a href="https://www.vijayvidyalaya.com/">Vijay Vidyalaya </a> krishnagiri.</p>
+        </div>       
+      </div>
+      </div>
+    </div>
+   <div id="contact">
+  <h3 class="main-Heading">Contact Me</h3>
+  <section>
+    <div class="contactContainer">      
+      <div class="contactInfo">
+        <div>
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><img src="./images/location.png"></span>
+              <span>
+                4/275-A <br>
+                Krishnagiri District<br>
+                Rayakottai-635116
+              </span>
+            </li>
+            <li>
+              <span><img src="./images/mail.png"></span>
+              <span class="email">murugancharan245@gmail.com</span>
+            </li>
+            <li>
+              <span><img src="./images/call.png"></span>
+              <span>9842532706</span>
+            </li>
+          </ul>
+        </div>
+        <ul class="sci">
+          <li><a href="https://www.facebook.com/charan.murugan.98/" target="_blank"><img src="./images/1.png"></a></li>
+          <li><a href="https://twitter.com/charan_murugan" target="_blank"><img src="./images/2.png"></a></li>
+          <li><a href="https://www.instagram.com/charan_murugan/" target="_blank"><img src="./images/3.png"></a></li>
+          <li><a href="https://github.com/charanmurugan" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/charan-murugan-2a84521b2" target="_blank"><img src="./images/5.png"></a></li>
+        </ul>
+      </div>
+      <div class="contactForm">
+        <form id="submit-form"action="" autocomplete="off">
+        <h2>Send a Message</h2>
+        <div class="formBox">
+          <div class="inputBox w100">
+            <input type="text" required name="fName">
+            <span>First Name</span>
+          </div>
+          <div class="inputBox w100">
+            <input type="text" required name="lName">
+            <span>Last Name</span>
+          </div>
+          <div class="inputBox w100">
+            <input type="email" required name="email">
+            <span>Email Address</span>
+          </div>
+          <div class="inputBox w100">
+            <input type="number" required name="mobileNumber">
+            <span>Mobile Number</span>
+          </div>
+          <div class="inputBox w100">
+            <textarea required name="message"></textarea>
+            <span>Write your Message</span>
+          </div>
+          <div class="inputBox w100">
+            <input type="submit" value="Send" onclick="formSubmitted()">
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </section>
+</div></div></div>
+<div id="loaderContainer">
+  <div id="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.js"
@@ -330,3 +511,5 @@
     ></script>
   </body>
 </html>
+
+
